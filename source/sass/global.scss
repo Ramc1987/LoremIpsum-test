@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -12,3 +18,4 @@ body {
   font-size: 13px;
   color: #ffffff;
 }
+

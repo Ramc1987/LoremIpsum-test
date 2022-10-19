@@ -1,0 +1,25 @@
+.logo {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 82.5%;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  margin-right: auto;
+  width: 247px;
+  padding: 22px 0 21px 20px;
+  outline: none;
+
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+}
+
+.logo p {
+  margin: 0;
+}
+
+.logo span {
+  color: #42a9ed;
+}

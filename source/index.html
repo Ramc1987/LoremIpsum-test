@@ -9,9 +9,33 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      
-    </a>
+    <div class="header__container">
+      <h1 class="visually-hidden">LoremIpsum.net</h1>
+      <a class="header__logo logo" href="index.html" aria-label="Логотип сайта LoremIpsum.net">
+        <p>LoremIpsum.<span>net</span></p>
+      </a>
+      <nav class="header__nav nav" aria-label="Основная.">
+        <ul class="nav__list" aria-label="По сайту.">
+          <li class="nav__item">
+            <a class="nav__link nav__link-current"href="#">Бизнес</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link"href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link"href="#">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link"href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__menu-toggle menu-toggle menu-toggle--nojs"" type="button" tabindex="1">
+        <span class="menu-toggle__line"></span>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
   </header>
+  <script src="./js/menu-toggle.js"></script>
 </body>
 </html>
