@@ -5,11 +5,11 @@
 }
 
 .nav__list {
-  position: static;
   width: 100%;
   margin: 0;
   padding: 0;
   background: #ffffff;
+  z-index: 100;
 
   &--open {
     position: absolute;

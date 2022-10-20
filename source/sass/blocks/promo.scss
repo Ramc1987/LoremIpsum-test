@@ -1,0 +1,98 @@
+.promo {
+  background: url("../img/fone/fone@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__content {
+  padding: 90px 20px 0 20px;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.promo__content h2 {
+  @include font(24px, 121%, 700);
+
+  margin: 0 0 30px 0;
+  color: #000000;
+}
+
+h2 span {
+  color: #3e9cdc;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0 0 60px 15px;
+}
+
+.promo__content-description h3 {
+  color: #000000;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+
+.promo__description-item {
+  @include font(11px, 118%, 400);
+  position: relative;
+  color: #000000;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 6px;
+    height: 2px;
+    background: #000000;
+  }
+}
+
+.promo__control-button {
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__button {
+  margin-bottom: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &--order {
+    background: #3e9cdc;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    width: 183px;
+    min-width: 100px;
+
+    &:hover {
+      background: #2f7db2;
+      transition: 0.2s ease-in-out;
+      border: 1px solid #6f6d7b;
+    }
+  }
+
+  &--detail {
+    background: #ffffff;
+    border: 1px solid #6f6d7b;
+    border-radius: 4px;
+    color: #2a2b30;
+    width: 183px;
+    min-width: 100px;
+
+    &:hover {
+      background: #6f6d7b;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
