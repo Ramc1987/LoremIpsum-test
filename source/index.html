@@ -115,8 +115,8 @@
                 <option value="value4">Temporibus autem</option>
                 <option value="value5">Itaque earum rerum</option>
               </select>
-              <input class="order__form-input" type="email" name="email" placeholder="Ваш e-mail">
-              <input class="order__form-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="order__form-input" type="email" name="email" placeholder="Ваш e-mail" required>
+              <input class="order__form-input" type="text" name="name" placeholder="Ваше имя" required>
               <div class="order__slider-wrapper">
                 <p class="order__slider-field">
                   <label class="order__slider-label">Sed ut perspiciatis, unde omnis iste natus</label>
@@ -136,6 +136,57 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <span class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</span>
+        <ul class="footer__pay-list">
+          <li class="footer__pay-item">
+            <a class="footer__pay-link" href="#">
+              <svg class="footer-pay-icon footer-pay-icon--qiwi" width="20" height="20">
+                <use xlink:href="img/sprite.svg#qiwi"></use>
+              </svg>
+              <span>
+                Qiwi wallet
+              </span>
+            </a>
+          </li>
+          <li class="footer__pay-item">
+            <a class="footer__pay-link" href="#">
+              <svg class="footer-pay-icon footer-pay-icon--web-money" width="19" height="18">
+                <use xlink:href="img/sprite.svg#web-money"></use>
+              </svg>
+              <span>Yandex Money</span>
+            </a>
+          </li>
+          <li class="footer__pay-item">
+            <a class="footer__pay-link" href="#">
+              <svg class="footer-pay-icon footer-pay-icon--yandex-money" width="15" height="18">
+                <use xlink:href="img/sprite.svg#yandex-money"></use>
+              </svg>
+              <span>Web Money</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="#">
+              <svg class="footer__contacts-icon footer__contacts-icon--footer-email" width="16" height="13">
+                <use xlink:href="img/sprite.svg#footer-email"></use>
+              </svg>
+              <span>info@ipsum228.com</span>
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="#">
+              <svg class="footer__contacts-icon footer__contacts-icon--vk" width="12" height="14">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span>Мы вконтакте</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/menu-toggle.js"></script>
     <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
     <script src="./js/slider.js"></script>

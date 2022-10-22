@@ -32,4 +32,8 @@
     left: 14px;
     top: 6px;
   }
+
+  &::before {
+    background: none;
+  }
 }
