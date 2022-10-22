@@ -37,6 +37,8 @@
 }
 
 .nav__item {
+  cursor: pointer;
+
   &:not(:first-child) {
     outline: 1px solid #f0ebff;
 
@@ -66,6 +68,12 @@
   &:active {
     background: rgba(16, 16, 29, 0.8);
   }
+
+  @media (min-width: $tablet) {
+    &:hover {
+      background: transparent;
+    }
+  }
 }
 
 .nav__link {
@@ -76,6 +84,10 @@
   text-transform: uppercase;
   padding: 25px 0 26px;
   text-align: center;
+
+  &:checked {
+    color: #43abf0;
+  }
 }
 
 .nav__link-current {
