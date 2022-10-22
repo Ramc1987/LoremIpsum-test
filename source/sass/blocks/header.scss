@@ -9,5 +9,15 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    flex-wrap: nowrap;
+    max-width: 94.8%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1172px;
+  }
 }
 

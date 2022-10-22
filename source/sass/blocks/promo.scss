@@ -4,19 +4,44 @@
   background-size: cover;
   background-position-x: -100px;
   transition: 0.4s ease-in-out;
+
+  @media (min-width: $tablet) {
+    background-position-x: 1px;
+  }
+}
+
+.promo__container {
+  @media (min-width: $desktop-width) {
+    padding: 203px 0 202px 0;
+    max-width: 1172px;
+    margin: 0 auto;
+  }
 }
 
 .promo__content {
   padding: 90px 20px 0 20px;
   margin: 0 auto;
   max-width: 550px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    max-width: 783px;
+  }
 }
 
 .promo__content h2 {
   @include font(24px, 121%, 700);
+  text-transform: uppercase;
 
   margin: 0 0 30px 0;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    @include font(48px, 138%, 800);
+    width: 783px;
+    margin: 0 0 70px 0;
+  }
 }
 
 h2 span {
@@ -32,6 +57,10 @@ h2 span {
   color: #000000;
   margin: 0 0 10px 0;
   font-size: 13px;
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, 83%, 700);
+  }
 }
 
 .promo__description-item {
@@ -52,6 +81,10 @@ h2 span {
     height: 2px;
     background: #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, 83%, 400);
+  }
 }
 
 .promo__control-button {
@@ -59,6 +92,12 @@ h2 span {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    width: 396px;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .promo__button {
@@ -66,6 +105,10 @@ h2 span {
 
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 
   &--order {
     @include font(13px, 87.5%, 400);

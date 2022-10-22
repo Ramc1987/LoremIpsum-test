@@ -10,6 +10,12 @@
 
 .order__container {
   padding: 60px 20px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 0 151px 0;
+    max-width: 1172px;
+    margin: 0 auto;
+  }
 }
 
 .order__title h2 {
@@ -18,6 +24,11 @@
   text-align: center;
 
   @include font(24px, 87%, 800);
+
+  @media (min-width: $desktop-width) {
+    @include font(36px, 83.7%, 800);
+    margin: 0 0 30px 0;
+  }
 }
 
 .order__title span {
@@ -29,6 +40,10 @@
   text-align: center;
 
   @include font(13px, 87%, 400);
+
+  @media (min-width: $desktop-width) {
+    @include font(18px, 85.7%, 400);
+  }
 }
 
 .order__pagination {
@@ -41,6 +56,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .order__pagination-item {
@@ -62,6 +82,13 @@
       top: 135px;
       left: 47%;
       z-index: -1;
+
+      @media (min-width: $desktop-width) {
+        transform: rotate(0deg);
+        width: 110px;
+        top: 39%;
+        left: 89%;
+      }
     }
   }
 }
@@ -75,6 +102,18 @@
   border-radius: 50px;
   margin: 0 auto 10px;
   border: 5px solid #286690;
+  cursor: pointer;
+
+  &:hover {
+    background: #286690;
+    border: 5px solid #3e9cdc;
+    transition: 0.2s ease-in;
+  }
+
+  &:hover .order__pagination-icon {
+    fill: #3ff4e1;
+    transition: 0.2s ease-in;
+  }
 }
 
 .order__pagination-icon {
@@ -84,26 +123,31 @@
   transform: translate(50%, -50%);
 
   &--search {
+    fill: #ffffff;
     width: 35px;
     height: 35px;
   }
 
   &--precent {
+    fill: #ffffff;
     width: 31px;
     height: 32px;
   }
 
   &--documents {
+    fill: #ffffff;
     width: 40px;
     height: 43px;
   }
 
   &--email {
+    fill: #ffffff;
     width: 37px;
     height: 29px;
   }
 
   &--cash {
+    fill: #ffffff;
     width: 39px;
     height: 27px;
   }
@@ -115,12 +159,38 @@
   text-align: center;
 }
 
+.order__form {
+  max-width: 1172px;
+  margin: 0 auto;
+}
 
 .order__form-user {
   max-width: 320px;
   margin: 0 auto 120px;
-  display: grid;
   gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1172px;
+    margin: 0 auto;
+  }
+}
+
+.order__contol-user {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.order__user-field-form {
+  display: grid;
+  row-gap: 30px;
+  margin: 0 auto 30px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .order__form-user select {
@@ -137,6 +207,14 @@
   &::-ms-expand {
     display: none;
   }
+
+  &:hover {
+    outline: 2px solid #3e9cdc;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 373px;
+  }
 }
 
 .order__form-input {
@@ -148,6 +226,14 @@
   width: 100%;
   cursor: pointer;
   outline: none;
+
+  &:hover {
+    outline: 2px solid #3e9cdc;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 370px;
+  }
 }
 
 .order__slider {
@@ -157,7 +243,17 @@
 .order__slider-field {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 0 10px 0;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.order__slider-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 770px;
+  }
 }
 
 .order__slider-field input {
@@ -166,6 +262,10 @@
   border: none;
   width: 55px;
   padding: 0 0 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 20px;
+  }
 }
 
 .order__slider-label {
@@ -175,7 +275,12 @@
 .order__upload-wrapper {
   position: relative;
   z-index: 10;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+  }
 }
 
 .order__slider-file input[type="file"] {
@@ -193,6 +298,16 @@
   background: #ffffff;
   border: 2px solid #3e9cdc;
   border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: #0bb8e9;
+  }
+
+  &:active {
+    background: #286690;
+    box-shadow: 4px 4px 8px 0 rgba(153, 138, 138, 0.2);
+  }
 
   &::after {
     content: "";
@@ -218,6 +333,7 @@
 }
 
 .order__button-submit {
+  position: relative;
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -230,4 +346,13 @@
   background: #3e9cdc;
   border: 1px solid #ffffff;
   border-radius: 4px;
+
+  &:hover {
+    background: #0bb8e9;
+  }
+
+  &:active {
+    background: #286690;
+    box-shadow: 4px 4px 8px 0 rgba(153, 138, 138, 0.2);
+  }
 }

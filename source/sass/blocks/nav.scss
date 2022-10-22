@@ -18,16 +18,45 @@
 
   &--close {
     display: none;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    background: transparent;
+    width: 373px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
   }
 }
 
 .nav__item {
   &:not(:first-child) {
     outline: 1px solid #f0ebff;
+
+    @media (min-width: $tablet) {
+      outline: none;
+    }
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
   }
 
   &:hover {
-    background: rgba(16, 16, 29, 0.9);
+    background: #5e5e8e;
   }
 
   &:hover .nav__link {

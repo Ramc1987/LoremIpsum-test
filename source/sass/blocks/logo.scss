@@ -11,6 +11,10 @@
   padding: 22px 0 22px 20px;
   outline: none;
 
+  @media (min-width: $desktop-width) {
+    padding: 22px 0 22px 0;
+  }
+
   &:focus {
     outline: 1px solid #ffffff;
   }
